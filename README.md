@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/775a139e-ddec-4a13-9d5f-804726e0ae8f)
+
 **This repo is supposed to used as config by NvChad users!**
 
 - The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
