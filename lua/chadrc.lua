@@ -6,12 +6,37 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+    theme = "catppuccin",
+    transparency = true,
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+    hl_override = {
+        Comment = { italic = true, fg = { "light_grey", 10 } },
+        ["@comment"] = { italic = true, fg = { "light_grey", 10 } },
+
+        LineNr = { fg = { "grey_fg2", 4 } },
+
+        -- CursorLine = { bg = { "black", 2 } },
+
+        Visual = { bg = { "black", 2 } },
+
+        IblChar = { fg = { "grey_fg2", 4 } },
+        IblScopeCharChar = { fg = { "grey_fg2", 4 } },
+
+        NvimTreeWinSeparator = { fg = { "grey_fg2", 4 } },
+        NvimTreeIndentMarker = { fg = { "grey_fg2", 4 } },
+        NvimTreeFolderArrowOpen = { fg = { "grey_fg2", 4 } },
+        NvimTreeFolderArrowClosed = { fg = { "grey_fg2", 4 } },
+
+        gitcommitComment = { italic = true, fg = { "light_grey", 10 } },
+
+        NonText = { italic = true, fg = { "light_grey", 10 } },
+    },
+}
+
+M.ui = {
+    statusline = {
+        separator_style = "round",
+    },
 }
 
 return M
