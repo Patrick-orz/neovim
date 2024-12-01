@@ -13,7 +13,10 @@ M.base46 = {
         Comment = { italic = true, fg = { "light_grey", 10 } },
         ["@comment"] = { italic = true, fg = { "light_grey", 10 } },
 
-        LineNr = { fg = { "grey_fg2", 4 } },
+        LineNr = { fg = { "light_grey", 10 } },
+
+        TbBufOff = { fg = { "light_grey", 10 } },
+        TbBufOnClose = { fg = { "light_grey", 10 } },
 
         -- CursorLine = { bg = { "black", 2 } },
 
