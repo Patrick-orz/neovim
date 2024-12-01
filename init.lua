@@ -25,6 +25,16 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+-- add custom filetype detections
+vim.filetype.add({
+  extension = {
+    ejs = 'ejs',
+  },
+})
+
+-- add custom treesitter highlights
+vim.treesitter.language.register('html', {'ejs'})
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
