@@ -43,6 +43,9 @@ vim.treesitter.language.register('html', {'ejs'})
 
 vim.lsp.set_log_level("debug")
 
+-- add Telescope ui selection
+require("telescope").load_extension("ui-select")
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")

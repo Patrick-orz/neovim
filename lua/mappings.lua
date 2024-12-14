@@ -12,7 +12,12 @@ map("n", "<leader>rr", "<cmd>lua require('persistence').load()<cr>", { desc = "r
 
 -- Insert current time
 map("n", "<leader>d", "<cmd>put =strftime('%Y-%m-%d %H:%M:%S')<cr>", {desc = "Insert current time"})
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- Ctrl-s for save
+map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- <leader>la Code Action
+map({"n"}, "<leader>la", "<cmd> lua vim.lsp.buf.code_action() <cr>", {desc = "Lazyless lsp code action"})
 
 -- -- simple terms
 -- map("n", "<leader>th", function()

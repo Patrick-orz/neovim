@@ -8,9 +8,20 @@ return {
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+    },
     config = function()
       require "configs.lspconfig"
     end,
+  },
+
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+      opts = function()
+        local t = require "configs.telescope"
+        return t
+      end,
   },
 
   -- {
