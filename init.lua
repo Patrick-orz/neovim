@@ -35,6 +35,14 @@ vim.filetype.add({
 -- add custom treesitter highlights
 vim.treesitter.language.register('html', {'ejs'})
 
+-- fix unity omnisharp
+-- vim.g.OmniSharp_server_use_mono = 0
+-- vim.g.OmniSharp_loglevel = 'DEBUG'
+-- vim.g.OmniSharp_server_use_net6 = 0
+-- vim.g.OmniSharp_server_path = 'C:\\Users\\Patrick\\omnisharp-win-x64\\OmniSharp.exe'
+
+vim.lsp.set_log_level("debug")
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")

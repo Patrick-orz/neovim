@@ -22,3 +22,15 @@ end
 --   on_init = nvlsp.on_init,
 --   capabilities = nvlsp.capabilities,
 -- }
+
+-- Attempt with omnisharp and Unity
+-- local pathToOmnisharp = "C:\\Users\\Patrick\\omnisharp-win-x64-net6.0"
+-- lspconfig.omnisharp.setup {
+--     cmd = {
+--         "dotnet",
+--         pathToOmnisharp .. '\\OmniSharp.dll',
+--     },
+--     -- on_attach = nvlsp.on_attach,
+--     -- on_init = nvlsp.on_init,
+--     -- capabilities = nvlsp.capabilities,
+-- }
