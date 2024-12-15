@@ -41,7 +41,7 @@ vim.treesitter.language.register('html', {'ejs'})
 -- vim.g.OmniSharp_server_use_net6 = 0
 -- vim.g.OmniSharp_server_path = 'C:\\Users\\Patrick\\omnisharp-win-x64\\OmniSharp.exe'
 
-vim.lsp.set_log_level("debug")
+-- vim.lsp.set_log_level("debug")
 
 -- add Telescope ui selection
 require("telescope").load_extension("ui-select")

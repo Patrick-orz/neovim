@@ -18,6 +18,8 @@ map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
 -- <leader>la Code Action
 map({"n"}, "<leader>la", "<cmd> lua vim.lsp.buf.code_action() <cr>", {desc = "Lazyless lsp code action"})
+-- <leader>ld Code diagnostic
+map({"n"}, "<leader>ld", "<cmd> lua vim.diagnostic.open_float() <cr>", {desc = "Lazyless lsp code diagnostic"})
 
 -- -- simple terms
 -- map("n", "<leader>th", function()

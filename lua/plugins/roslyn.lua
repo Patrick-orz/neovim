@@ -1,12 +1,12 @@
 return {
-    {
-        "seblj/roslyn.nvim",
-        ft = "cs",
-        opts = {
-            config = {
-                settings = {
-                },
-            },
-        }
-    }
+    -- {
+    --     "seblj/roslyn.nvim",
+    --     ft = "cs",
+    --     opts = {
+    --         config = {
+    --             settings = {
+    --             },
+    --         },
+    --     }
+    -- }
 }

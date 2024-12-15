@@ -9,7 +9,7 @@ o.cursorlineopt ='both' -- to enable cursorline!
 vim.wo.relativenumber = true -- relative line number
 
 o.tabstop = 4 -- A TAB character looks like 4 spaces
-o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
+o.expandtab = false -- Pressing the TAB key will NOT insert spaces instead of a TAB character
 o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
 o.shiftwidth = 4 -- Number of spaces inserted when indenting
 
