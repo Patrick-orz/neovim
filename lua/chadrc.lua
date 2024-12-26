@@ -9,6 +9,7 @@ M.base46 = {
     theme = "catppuccin",
     transparency = true,
 
+---@diagnostic disable-next-line: missing-fields
     hl_override = {
         Comment = { italic = true, fg = { "light_grey", 10 } },
         ["@comment"] = { italic = true, fg = { "light_grey", 10 } },
