@@ -24,6 +24,10 @@ if vim.g.neovide then
     vim.keymap.set('v', '<D-v>', '"+P') -- Paste visual mode
     vim.keymap.set('c', '<D-v>', '<C-R>+') -- Paste command mode
     vim.keymap.set('i', '<D-v>', '<ESC>l"+Pli') -- Paste insert mode
+
+    vim.g.neovide_opacity = 0.9
+    vim.g.neovide_window_blurred = true
+    vim.o.guifont = "Maple Mono NF"
 end
 
 -- Allow clipboard copy paste in neovim
@@ -31,3 +35,13 @@ vim.api.nvim_set_keymap('', '<D-v>', '+p<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('!', '<D-v>', '<C-R>+', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('t', '<D-v>', '<C-R>+', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('v', '<D-v>', '<C-R>+', { noremap = true, silent = true})
+
+-- Adjust transparency between terminal and neovide
+vim.api.nvim_create_autocmd({ "UIEnter", "VimEnter" }, {
+    callback = function()
+        pcall(function()
+            require("base46").load_all_highlights()
+        end)
+    end,
+})
+

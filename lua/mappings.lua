@@ -20,25 +20,3 @@ map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 map({"n"}, "<leader>la", "<cmd> lua vim.lsp.buf.code_action() <cr>", {desc = "Lazyless lsp code action"})
 -- <leader>ld Code diagnostic
 map({"n"}, "<leader>ld", "<cmd> lua vim.diagnostic.open_float() <cr>", {desc = "Lazyless lsp code diagnostic"})
-
--- -- simple terms
--- map("n", "<leader>th", function()
---   require("nvchad.term").new { pos = "sp" }
--- end, { desc = "terminal new horizontal term" })
---
--- map("n", "<leader>tv", function()
---   require("nvchad.term").new { pos = "vsp" }
--- end, { desc = "terminal new vertical window" })
---
--- -- toggleable terms
--- map({ "n", "t" }, "<leader>v", function()
---   require("nvchad.term").toggle { pos = "vsp", id = "vtoggleTerm" }
--- end, { desc = "terminal toggleable vertical term" })
---
--- map({ "n", "t" }, "<leader>h", function()
---   require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
--- end, { desc = "terminal new horizontal term" })
---
--- map({ "n", "t" }, "<leader>i", function()
---   require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
--- end, { desc = "terminal toggle floating term" })
