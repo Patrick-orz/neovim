@@ -28,6 +28,8 @@ if vim.g.neovide then
     vim.g.neovide_opacity = 0.9
     vim.g.neovide_window_blurred = true
     vim.o.guifont = "Maple Mono NF"
+
+    vim.g.neovide_refresh_rate = 1000
 end
 
 -- Allow clipboard copy paste in neovim
